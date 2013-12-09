@@ -65,11 +65,8 @@
 		<property name="noCheckFile" value=".gif,.jpg,.css,.js,.png,.bmp,.eot" />
 	</bean>
 
-
 	<context:property-placeholder
 		ignore-unresolvable="true" order="1" location="classpath*:/properties/*.properties" />
-	<util:properties id="shiro"
-		location="classpath:/properties/shiro.properties" />
 	<util:properties id="jdbcConfig"
 		location="classpath:/properties/jdbc.properties" />
 
