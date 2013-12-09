@@ -20,7 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
  * @see DispatcherServlet（可选）
  （可选）
  */
-public class sunivoDispatcherServlet extends DispatcherServlet {
+public class SunivoDispatcherServlet extends DispatcherServlet {
 	/**
 	 * 自定义DispathcerServlet，解决乱码
 	 */
