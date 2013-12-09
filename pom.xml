@@ -312,6 +312,6 @@
 		<!-- mysql end -->
 	</dependencies>
 	<build>
-		<finalName>lgs-web</finalName>
+		<finalName>Sample-web</finalName>
 	</build>
 </project>
