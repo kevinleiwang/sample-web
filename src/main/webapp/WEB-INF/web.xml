@@ -34,7 +34,7 @@
 	<!-- pc端的servlet start -->
 	<servlet>
 		<servlet-name>sunivo</servlet-name>
-		<servlet-class>com.sunivo.lgs.web.base.servlet.sunivoDispatcherServlet</servlet-class>
+		<servlet-class>com.sunivo.lgs.web.base.servlet.SunivoDispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>namespace</param-name>
 			<param-value>classes/sunivo-servlet</param-value>
