@@ -28,18 +28,13 @@ import com.sunivo.lgs.web.base.controller.BaseController;
  * 〈一句话功能简述〉<br>
  * 〈功能详细描述〉
  * 
- * @author chenzhao
+ * @author wanglei
  * @version [版本号, 2012-12-17]
  */
 @Controller
 @RequestMapping("/")
 public class IndexController extends BaseController {
 
-    @Value("#{shiro['sso.url']}")
-    private String ssoUrl;
-
-    @Value("#{shiro['sso.callback.url']}")
-    private String callbackUrl;
 
     /**
      * 功能描述: <br>
@@ -70,16 +65,5 @@ public class IndexController extends BaseController {
             HttpServletResponse response) throws Exception {
         response.sendRedirect(request.getRequestURL() + "/index");
         return null;
-    }
-
-    /**
-     * 
-     * @return
-     * @throws Exception
-     */
-    @RequestMapping(value = "/logout", method = { RequestMethod.GET,
-            RequestMethod.POST })
-    public String logout() throws Exception {
-        return "redirect:" + ssoUrl + "/logout?service=" + this.callbackUrl;
     }
 }

@@ -59,11 +59,6 @@ public class SampleController extends BaseController {
      * @Autowired private DemoUserService demoUserService;
      */
 
-    @Autowired
-    private SampleServiceInterface sampleService;
-
-    @Autowired
-    private ICustomer customer;
 
     private static final Logger logger = Logger
             .getLogger(SampleController.class);
@@ -95,35 +90,7 @@ public class SampleController extends BaseController {
     @RequestMapping(value = "saveSample", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public String saveSample(HttpServletRequest request) {
-        try {
-            logger.info("---进入到saveSample---");
-            String name = request.getParameter("name");
-            String age = request.getParameter("age");
-            String sex = request.getParameter("sex");
-            String birthday = request.getParameter("birthday");
-            // DemoCustomerRequest customerDemoRequest = new
-            // DemoCustomerRequest();
-            // customerDemoRequest.setAge()
-            // demoUserService.addUser(customerDemoRequest);
-            SampleRequest sampleRequest = new SampleRequest();
-            SampleBean sampleBean = new SampleBean();
-            sampleBean.setName(name);
-            if (!StringUtils.isEmpty(sex)) {
-                sampleBean.setSex(Integer.parseInt(sex));
-            }
-            sampleBean.setBirthdayStr(birthday + " 00:00:00");
-            sampleRequest.setSampleBean(sampleBean);
-            SampleResponse sampleResponse = sampleService
-                    .addUser(sampleRequest);
-            // sampleResponse.
-            if (sampleResponse != null) {
-                return sampleResponse.getResultCode();
-            }
-        } catch (Exception e) {
-            logger.info("save cus happend exception!", e);
-            return null;
-        }
-        return "1";
+       return "";
     }
 
     /* @SuppressWarnings("rawtypes") */
@@ -177,15 +144,6 @@ public class SampleController extends BaseController {
     @RequestMapping(value = "/hessionSample", method = RequestMethod.GET)
     public String hessionSample(HttpServletRequest request, Integer number) {
         try {
-            logger.info("-------------hessionSample begin---------");
-            /*
-             * QueryCustomerInfoRequest request1 =new
-             * QueryCustomerInfoRequest(); request1.setCustomerType("04");
-             * CustomerInfoExt entity = new CustomerInfoExt();
-             * entity.setRoleType("04"); request1.setEntity(entity);
-             * QueryCustomerInfoResponse response = customer
-             * .queryCustomerInfo(request1);
-             */
             return getAutoUrl();
         } catch (Exception e) {
             return getAutoUrl();

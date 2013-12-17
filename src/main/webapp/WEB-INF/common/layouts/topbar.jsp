@@ -15,7 +15,7 @@
 						</ul>
 						<ul class="nav pull-right">
 							<li class="dropdown pull-right"><a href="#" data-toggle="dropdown" style="padding: 8px 15px;"> 
-							<span class="message" title="<sunivo:username />"><sunivo:username /></span>
+							<span class="message" title=""></span>
 								<i class="icon-angle-down"></i>
 							</a>
 							<ul class="dropdown-menu">
