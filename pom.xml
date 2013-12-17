@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sunivo</groupId>
-	<artifactId>Sample-web</artifactId>
+	<artifactId>sample-web</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Sample-web Maven Webapp</name>
+	<name>sample-web Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -312,6 +312,6 @@
 		<!-- mysql end -->
 	</dependencies>
 	<build>
-		<finalName>Sample-web</finalName>
+		<finalName>sample-web</finalName>
 	</build>
 </project>
