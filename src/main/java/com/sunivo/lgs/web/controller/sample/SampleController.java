@@ -21,7 +21,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -38,11 +37,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.sunivo.lgs.web.base.controller.BaseController;
 import com.sunivo.lgs.web.valueobject.entity.demo.TestUserEntity;
 import com.sunivo.lgs.web.valueobject.vo.TestUserVo;
-import com.sunivo.ws.beans.domain.SampleBean;
-import com.sunivo.ws.beans.request.SampleRequest;
-import com.sunivo.ws.beans.response.SampleResponse;
-import com.sunivo.ws.interfaces.server.crm.ICustomer;
-import com.sunivo.ws.interfaces.server.sample.SampleServiceInterface;
 
 /**
  * SOM_订单基础信息控制器<br>

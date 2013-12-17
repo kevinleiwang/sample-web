@@ -29,8 +29,8 @@ import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
 import com.sunivo.lgs.web.base.configurer.MemoryPropertyPlaceholderConfigurer;
-import com.sunivo.tags.valueobject.beans.AlertMessageObject;
-import com.sunivo.tags.valueobject.constants.enums.AlertMessageLevel;
+import com.sunivo.lgs.web.valueobject.beans.AlertMessageObject;
+import com.sunivo.lgs.web.valueobject.constants.enums.AlertMessageLevel;
 
 /**
  * 素有Controllere的基础类，提供一些特殊功能
